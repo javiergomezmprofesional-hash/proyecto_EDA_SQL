@@ -65,7 +65,7 @@ create table FACT_VENTAS (
     FOREIGN KEY (producto_id) REFERENCES DIM_PRODUCTO(producto_id)
 );
 
--- Indices pedidos en el ejercicio
+-- Indices para que la busqueda en la bbdd de clientes y productos sea más sencilla
 CREATE INDEX idx_email ON DIM_CLIENTE(email);
 CREATE INDEX idx_producto ON DIM_PRODUCTO(nombre);
 
